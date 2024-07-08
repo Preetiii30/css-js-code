@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    <!-- <h1>
+        Hello World
+    </h1>
+    <div class="content">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quidem vitae officiis, vel magni quaerat dignissimos, consequuntur fugit ad, ab repellat 
+            aperiam! Architecto et culpa consequatur!
+        </p> -->
+<script>
+    // var name= "Preeti"
+    // var message= "is a good girl"
+    // var fav="food"
+    // var temp=`${name} is a good girl and she love ${fav}`
+    // console.log(temp);
+    // var len= name.length;
+    // console.log(`length of name is ${len}`)
+    // console.log("Hello World\nhow are you")
+    var str="this is string";
+    console.log(str);
+    // first oocurence of substring
+    var position=str.indexOf('is'); 
+    console.log(position);
+
+    position=str.lastIndexOf('is'); 
+    console.log(position)
+
+    // substring from a string
+    // var substr=str.slice(1,6);
+    var substr=str.substring(1,6);
+    // slice can take negative values subsrting will not take negative values
+    var substr=str.substr(1,6);
+    // substr tell us from which index we start
+    console.log(substr);
+
+    var replaced=str.replace('string', 'Preeti');
+    // console.log(str)
+    console.log(replaced);
+    
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    var char2=str.charAt(2);
+    console.log(char2);
+
+  
+</script>      
+</body>
+</html>

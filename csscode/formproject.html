@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .login-box{
+            height: 500px;
+            width: 400px;
+            border: 30px;
+            background-color: white;
+            margin-left:500px;
+            margin-right:600px;
+            margin-top: 90px;
+            padding: 30px;
+            
+        }
+        #oo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            text-align: center;
+            font-style: bold;
+            
+        }
+        .login-button {
+            background: linear-gradient(to right, rgb(255, 102, 0), rgb(255, 230, 0));
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 400px;
+            margin-right: 300px;
+            
+        
+        }
+        .signup-link {
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        form{
+            height: 200px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="pp">
+        <h1 class="oo">Login Form</h1>
+        
+
+        <label for="email"><b>Email or Phone</b></label><br>
+    <input type="text" placeholder="" name="email" required>
+    <Br>
+    <Br>
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="" name="psw" required>
+        
+    </div> -->
+    <div class="login-box">
+        <h1 id="oo">Login Form</h1>
+        <form>
+            <label for="email">Email or Phone</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <p class="signup-link">Not a member? <a href="signup.html">Signup now</a>.</p>
+        
+    </div>
+</body>
+</html>

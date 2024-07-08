@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation{
+            /* height: 200px;
+            width: 200px;
+            background-color: bisque; */
+            animation-name: pop; 
+            /* we can give any name */
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            position: relative;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+            /* shows how many times animation will run */
+            animation-direction: alternate-reverse;
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in; */
+            /* shorthand prop - animation: animation-name, animation-duration, animation-timing-function, animation-dalay, animation-iteration-count, animation-fill-mode; */
+        }
+        @keyframes pop{
+            /* form{
+                width:200px;
+            }
+            to{
+                width: 500px;
+            } */
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: bisque;
+            }
+            25%{
+                top: 100px;
+                left: 0px;
+                background-color: brown;
+            }
+            50%{
+                top: 100px;
+                left: 100px;
+                background-color: red;
+            }
+            75%{
+                top: 0px;
+                left: 100px;
+                background-color: yellow;
+            }
+            100%{
+                top: 100px;
+                left: 100px;
+                background-color: purple;
+            }
+        }
+        .animation{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(77, 16, 16);
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>

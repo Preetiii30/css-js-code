@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container{
+           border: 2px solid rgb(208, 171, 245);
+           width: 900px;
+           margin: 33px auto; 
+
+        }
+
+        .item{
+            border: 2px solid rgb(189, 186, 186);
+            background-color: rgb(254, 220, 220);
+            padding: 10px 10px;
+            margin: 10px 10px;
+        }
+
+        #pencil{
+           float: left;
+           width: 48%;
+        }
+
+        #pen{
+            float: right;
+           width: 48%;
+        }
+
+        #notebook{
+            /* float: left; */
+           width: 100%;
+           clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pencil" class="item">
+        <h2>Pencil</h2>
+        <p id="pencilbox" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque recusandae ipsa perspiciatis reprehenderit qui illum eum veniam dicta nam temporibus debitis inventore eius.</p>
+    </div>
+    <div id="pen" class="item">
+        <h2>Pen</h2>
+        <p id="penbox" class="box">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. sit amet, consectetur adipisicing elit. Delectus, quasi? Laudantium, iusto! </p>
+    </div>
+    <div id="notebook" class="item">
+        <h2>Notebook</h2>
+        <p id="notebookbox" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, rem.</p>
+    </div>
+    </div>
+</body>
+</html>

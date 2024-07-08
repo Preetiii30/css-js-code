@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        *{
+            box-sizing: border-box;  
+            /* it doesn't change the total width including margin and padding. so if we want that the width we guven remain same we use border box property
+         */
+        }
+        header{
+            margin: auto;
+            border: 1px solid black;
+            width: 1200px;
+        }
+        img{
+            width: 34px;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        .box{
+            border: 1px solid black;
+            background-color: rgb(220, 207, 232);
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            display: inline-block;
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <header class="top">
+    <img src="/img.jpg" alt="">
+    <h3>CSS display property</h3>
+  </header>
+  <div class="container">
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe. Voluptas incidunt
+             quae deleniti repellendus in omnis voluptatibus unde perspiciatis doloribus itaque, illum 
+             quaerat? Ex doloribus temporibus ullam eos voluptatem 
+            perspiciatis iste ad labore sit quasi totam fugiat, unde sapiente quam saepe suscipit distinctio?</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe. Voluptas incidunt
+             quae deleniti repellendus in omnis voluptatibus unde perspiciatis doloribus itaque, illum 
+             quaerat? Ex doloribus temporibus ullam eos voluptatem 
+            perspiciatis iste ad labore sit quasi totam fugiat, unde sapiente quam saepe suscipit distinctio?</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe. Voluptas incidunt
+             quae deleniti repellendus in omnis voluptatibus unde perspiciatis doloribus itaque, illum 
+             quaerat? Ex doloribus temporibus ullam eos voluptatem 
+            perspiciatis iste ad labore sit quasi totam fugiat, unde sapiente quam saepe suscipit distinctio?</p>
+    </div>
+  </div>
+</body>
+</html>

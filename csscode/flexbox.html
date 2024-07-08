@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex properties for container*/
+            /* flex-direction: row; by default is row*/
+            /* flex-direction: column; */
+            /* flex-wrap: nowrap; */
+            /* flex-direction: row-reverse; */
+            /* justify-content: center;to align in center
+            justify-content: space-between; to give equal space in box*/ 
+            /* justify-content: space-evenly;
+            justify-content: space-around; */
+            align-items: center;
+        }
+        .item{
+            background-color: blanchedalmond;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        #item-1{
+        /* flex properties for container*/  
+        /* higher the orderlast it will show  */
+        /* order: 2; */
+        flex-grow: 2;
+        }
+        #item-2{
+        flex-grow: 3;
+        flex-shrink: 3;
+        }
+        #item-3{
+        flex-grow: 2;
+        align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h3>this is flexbox</h3>
+    <div class="container">
+    <div class="item" id="item-1">first</div>
+    <div class="item" id="item-2">second</div>
+    <div class="item" id="item-3">third</div>
+    <!-- <div class="item" id="item-4">fourth</div>
+    <div class="item" id="item-5">fifth</div>
+    <div class="item" id="item-6">sixth</div> -->
+    </div>
+</body>
+</html>
